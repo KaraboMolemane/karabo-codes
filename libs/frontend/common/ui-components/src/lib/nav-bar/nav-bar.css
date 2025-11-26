@@ -51,6 +51,35 @@
   }
 }
 
+/* Responsive styles for smaller screens */
+@media (max-width: 960px) {
+  .navbar-container {
+    padding: 0 0.5rem;
+  }
+
+  .navbar-content {
+    padding: 0.25rem 0.5rem;
+    margin: 0.25rem auto 0;
+  }
+
+  /* Ensure mobile menu overlay appears above everything */
+  ::ng-deep .p-menubar-mobile-active .p-menubar-root-list {
+    position: fixed !important;
+    z-index: 1000 !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar-content {
+    border-radius: 0.5rem;
+    max-width: 100%;
+  }
+  
+  .navbar-backdrop {
+    height: 4rem;
+  }
+}
+
 /* Override PrimeNG menubar default background to be transparent */
 ::ng-deep .p-menubar {
   background: transparent !important;
