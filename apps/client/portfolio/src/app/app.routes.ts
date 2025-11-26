@@ -3,7 +3,7 @@ import { Route } from '@angular/router';
 export const appRoutes: Route[] = [
     {
         path: '',
-        loadComponent: () => import('./resume/resume').then(m => m.Resume),
+        loadComponent: () => import('./home/home').then(m => m.Home),
     },
     // {
     //     path: 'about',
