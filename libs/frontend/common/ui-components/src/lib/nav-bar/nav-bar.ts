@@ -18,12 +18,12 @@ export class NavBar implements OnInit {
         icon: 'pi pi-home',
       },
       {
-        label: 'Features',
-        icon: 'pi pi-star',
+        label: 'About Me',
+        icon: 'pi pi-user',
       },
       {
         label: 'Projects',
-        icon: 'pi pi-search',
+        icon: 'pi pi-briefcase',
         items: [
           {
             label: 'Components',
@@ -54,8 +54,32 @@ export class NavBar implements OnInit {
         ],
       },
       {
+        label: 'Experience',
+        icon: 'pi pi-building',
+      },
+      {
+        label: 'Skills',
+        icon: 'pi pi-desktop',
+      },
+      {
+        label: 'System Design',
+        icon: 'pi pi-objects-column',
+      },
+      {
+        label: 'Code Quality',
+        icon: 'pi pi-code',
+      },
+      {
+        label: 'Resume',
+        icon: 'pi pi-file',
+      },
+      {
         label: 'Contact',
         icon: 'pi pi-envelope',
+      },
+      {
+        label: 'Admin',
+        icon: 'pi pi-user-edit',
       },
     ];
   }
