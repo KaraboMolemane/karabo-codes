@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-api",
+  "name": "server-portfolio-api",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/server/portfolio-api/src",
   "projectType": "application",
@@ -51,15 +51,15 @@
       "defaultConfiguration": "development",
       "dependsOn": ["build"],
       "options": {
-        "buildTarget": "portfolio-api:build",
+        "buildTarget": "server-portfolio-api:build",
         "runBuildTargetDependencies": false
       },
       "configurations": {
         "development": {
-          "buildTarget": "portfolio-api:build:development"
+          "buildTarget": "server-portfolio-api:build:development"
         },
         "production": {
-          "buildTarget": "portfolio-api:build:production"
+          "buildTarget": "server-portfolio-api:build:production"
         }
       }
     },

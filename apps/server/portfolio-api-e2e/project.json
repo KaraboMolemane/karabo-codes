@@ -2,7 +2,7 @@
   "name": "portfolio-api-e2e",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "implicitDependencies": ["portfolio-api"],
+  "implicitDependencies": ["server-portfolio-api"],
   "targets": {
     "e2e": {
       "executor": "@nx/jest:jest",
@@ -11,7 +11,7 @@
         "jestConfig": "apps/server/portfolio-api-e2e/jest.config.ts",
         "passWithNoTests": true
       },
-      "dependsOn": ["portfolio-api:build", "portfolio-api:serve"]
+      "dependsOn": ["server-portfolio-api:build", "server-portfolio-api:serve"]
     }
   }
 }
