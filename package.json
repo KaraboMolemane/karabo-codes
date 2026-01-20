@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start:client": "nx serve client-portfolio",
-    "start:server": "nx serve server-portfolio-api",
-    "start": "nx run-many --target=serve --projects=client-portfolio,server-portfolio-api"
+    "start:client": "cross-env nx serve client-portfolio",
+    "start:server": "cross-env nx serve server-portfolio-api",
+    "start": "cross-env nx run-many --target=serve --projects=client-portfolio,server-portfolio-api"
   },
   "private": true,
   "dependencies": {
@@ -56,6 +56,7 @@
     "@types/node": "20.19.9",
     "@typescript-eslint/utils": "^8.40.0",
     "angular-eslint": "^20.3.14",
+    "cross-env": "^10.1.0",
     "cypress": "^14.2.1",
     "eslint": "^9.8.0",
     "eslint-config-prettier": "^10.0.0",
