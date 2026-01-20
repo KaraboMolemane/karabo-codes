@@ -1,5 +1,5 @@
 {
-  "name": "client/portfolio",
+  "name": "client-portfolio",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
@@ -55,10 +55,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "client/portfolio:build:production"
+          "buildTarget": "client-portfolio:build:production"
         },
         "development": {
-          "buildTarget": "client/portfolio:build:development"
+          "buildTarget": "client-portfolio:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -66,7 +66,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "client/portfolio:build"
+        "buildTarget": "client-portfolio:build"
       }
     },
     "lint": {
@@ -84,7 +84,7 @@
       "continuous": true,
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "client/portfolio:build",
+        "buildTarget": "client-portfolio:build",
         "port": 4200,
         "spa": true
       }

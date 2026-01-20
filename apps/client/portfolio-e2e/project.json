@@ -4,7 +4,7 @@
   "projectType": "application",
   "sourceRoot": "apps/client/portfolio-e2e/src",
   "tags": [],
-  "implicitDependencies": ["client/portfolio"],
+  "implicitDependencies": ["client-portfolio"],
   "// targets": "to see all targets run: nx show project client/portfolio-e2e --web",
   "targets": {}
 }

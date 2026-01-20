@@ -10,5 +10,5 @@ import { Footer } from '@karabo-codes/nav-bar';
   styleUrl: './app.css',
 })
 export class App {
-  protected title = 'client/portfolio';
+  protected title = 'client-portfolio';
 }

@@ -16,19 +16,19 @@
 To run the dev server for your app, use:
 
 ```sh
-npx nx serve client/portfolio
+npx nx serve client-portfolio
 ```
 
 To create a production bundle:
 
 ```sh
-npx nx build client/portfolio
+npx nx build client-portfolio
 ```
 
 To see all available targets to run for a project, run:
 
 ```sh
-npx nx show project client/portfolio
+nx show project client-portfolio
 ```
 
 These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.

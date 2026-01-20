@@ -1,5 +1,5 @@
 export default {
-  displayName: 'client/portfolio',
+  displayName: 'client-portfolio',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   coverageDirectory: '../../../coverage/apps/client/portfolio',

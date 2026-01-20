@@ -1,6 +1,6 @@
 import { getHomeTitle } from '../support/app.po';
 
-describe('client/portfolio-e2e', () => {
+describe('client-portfolio-e2e', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should display Home card title', () => {

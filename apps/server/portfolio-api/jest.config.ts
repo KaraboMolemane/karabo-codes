@@ -1,5 +1,5 @@
 export default {
-  displayName: 'portfolio-api',
+  displayName: 'server-portfolio-api',
   preset: '../../../jest.preset.js',
   testEnvironment: 'node',
   transform: {

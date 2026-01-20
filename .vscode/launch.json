@@ -4,9 +4,9 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Debug portfolio-api with Nx",
+      "name": "Debug server-portfolio-api with Nx",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["nx", "serve", "portfolio-api"],
+      "runtimeArgs": ["nx", "serve", "server-portfolio-api"],
       "env": {
         "NODE_OPTIONS": "--inspect=9229"
       },
