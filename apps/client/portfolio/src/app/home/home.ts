@@ -5,6 +5,6 @@ import { CardModule } from 'primeng/card';
   selector: 'app-home',
   imports: [CardModule],
   templateUrl: './home.html',
-  styleUrl: './home.css',
+  styleUrl: './home.scss',
 })
 export class Home {}

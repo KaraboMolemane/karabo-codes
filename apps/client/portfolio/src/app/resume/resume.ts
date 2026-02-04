@@ -5,6 +5,6 @@ import { CardModule } from 'primeng/card';
   selector: 'app-resume',
   imports: [CardModule],
   templateUrl: './resume.html',
-  styleUrl: './resume.css',
+  styleUrl: './resume.scss',
 })
 export class Resume {}

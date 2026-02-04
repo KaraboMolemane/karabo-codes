@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-code-quality',
   imports: [],
   templateUrl: './code-quality.html',
-  styleUrl: './code-quality.css',
+  styleUrl: './code-quality.scss',
 })
 export class CodeQuality {}

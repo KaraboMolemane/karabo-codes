@@ -21,7 +21,7 @@
             "input": "apps/client/portfolio/public"
           }
         ],
-        "styles": ["apps/client/portfolio/src/styles.css"]
+        "styles": ["apps/client/portfolio/src/styles.scss"]
       },
       "configurations": {
         "production": {

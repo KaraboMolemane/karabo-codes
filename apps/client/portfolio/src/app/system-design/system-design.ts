@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-system-design',
   imports: [],
   templateUrl: './system-design.html',
-  styleUrl: './system-design.css',
+  styleUrl: './system-design.scss',
 })
 export class SystemDesign {}
