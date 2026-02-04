@@ -7,7 +7,7 @@ import { Footer } from '@karabo-codes/nav-bar';
   imports: [RouterModule, NavBar, Footer],
   selector: 'app-root',
   templateUrl: './app.html',
-  styleUrl: './app.css',
+  styleUrl: './app.scss',
 })
 export class App {
   protected title = 'client-portfolio';

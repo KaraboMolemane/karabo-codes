@@ -7,7 +7,7 @@ import { Menubar } from 'primeng/menubar';
   selector: 'lib-nav-bar',
   imports: [Menubar, RouterModule],
   templateUrl: './nav-bar.html',
-  styleUrl: './nav-bar.css',
+  styleUrl: './nav-bar.scss',
 })
 export class NavBar implements OnInit {
   items: MenuItem[] | undefined;

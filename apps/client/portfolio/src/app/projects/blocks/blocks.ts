@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-blocks',
   imports: [],
   templateUrl: './blocks.html',
-  styleUrl: './blocks.css',
+  styleUrl: './blocks.scss',
 })
 export class Blocks {}

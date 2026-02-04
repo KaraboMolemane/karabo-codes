@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-apollo',
   imports: [],
   templateUrl: './apollo.html',
-  styleUrl: './apollo.css',
+  styleUrl: './apollo.scss',
 })
 export class Apollo {}

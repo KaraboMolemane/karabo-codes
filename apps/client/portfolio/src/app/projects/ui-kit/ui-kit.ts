@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-ui-kit',
   imports: [],
   templateUrl: './ui-kit.html',
-  styleUrl: './ui-kit.css',
+  styleUrl: './ui-kit.scss',
 })
 export class UiKit {}
