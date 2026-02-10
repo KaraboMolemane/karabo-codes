@@ -20,7 +20,7 @@
     "@nestjs/core": "^11.0.0",
     "@nestjs/platform-express": "^11.0.0",
     "@primeuix/themes": "^2.0.3",
-    "axios": "^1.6.0",
+    "axios": "^1.13.5",
     "primeicons": "^7.0.0",
     "primeng": "^20.4.0",
     "reflect-metadata": "^0.1.13",
