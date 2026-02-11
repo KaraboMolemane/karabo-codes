@@ -13,7 +13,11 @@
   margin: 0 auto;
   padding: 1rem 1rem 1.75rem;
   color: var(--text);
-  background: linear-gradient(135deg, rgba(122, 140, 255, 0.12), rgba(160, 111, 240, 0.12));
+  background: linear-gradient(
+    135deg,
+    rgba(122, 140, 255, 0.12),
+    rgba(160, 111, 240, 0.12)
+  );
   border: 1px solid rgba(122, 140, 255, 0.2);
   border-radius: 18px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.22);
