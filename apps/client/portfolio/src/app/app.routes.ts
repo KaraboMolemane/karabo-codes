@@ -67,4 +67,11 @@ export const appRoutes: Route[] = [
     path: 'admin',
     loadComponent: () => import('./admin/admin').then((m) => m.Admin),
   },
+  // Fallback 404 route (re-usable library component)
+  {
+    path: '**',
+    loadComponent: () =>
+      import('@karabo-codes/nav-bar').then((m) => m.NotFound),
+    data: { homeUrl: '/' },
+  },
 ];
