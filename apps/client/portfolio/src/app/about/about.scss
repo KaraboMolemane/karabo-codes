@@ -167,7 +167,9 @@
   border-radius: 16px;
   padding: 1rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.22);
-  transition: transform 160ms ease, box-shadow 160ms ease,
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
     border-color 160ms ease;
 }
 
