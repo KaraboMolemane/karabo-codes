@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'ui-not-found',
+  selector: 'lib-not-found',
   standalone: true,
   imports: [RouterLink],
   templateUrl: './not-found.html',
