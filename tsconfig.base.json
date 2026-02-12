@@ -17,6 +17,9 @@
     "paths": {
       "@karabo-codes/nav-bar": [
         "libs/frontend/common/ui-components/src/index.ts"
+      ],
+      "@karabo-codes/ui-not-found": [
+        "libs/frontend/common/ui-not-found/src/index.ts"
       ]
     }
   },
