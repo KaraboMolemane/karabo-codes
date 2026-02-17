@@ -9,7 +9,7 @@ export default {
       'jest-preset-angular',
       {
         tsconfig: '<rootDir>/tsconfig.spec.json',
-        stringifyContentPathRegex: '\\.html$'
+        stringifyContentPathRegex: '\\.html$',
       },
     ],
   },
