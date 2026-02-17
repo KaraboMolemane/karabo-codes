@@ -20,6 +20,15 @@
       ],
       "@karabo-codes/ui-not-found": [
         "libs/frontend/common/ui-not-found/src/index.ts"
+      ],
+      "@portfolio2/shared/layout": [
+        "libs/portfolio2/shared/layout/src/index.ts"
+      ],
+      "@portfolio2/shared/ui-components": [
+        "libs/portfolio2/shared/ui-components/src/index.ts"
+      ],
+      "@portfolio2/shared/not-found": [
+        "libs/portfolio2/shared/not-found/src/index.ts"
       ]
     }
   },

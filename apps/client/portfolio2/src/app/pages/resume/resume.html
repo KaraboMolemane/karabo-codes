@@ -1,0 +1,82 @@
+<div class="resume-page">
+  <section class="page-header">
+    <h1>Resume</h1>
+    <button
+      pButton
+      label="Download PDF"
+      icon="pi pi-download"
+      class="p-button-lg"
+      (click)="downloadPDF()"
+    ></button>
+  </section>
+
+  <div class="resume-content">
+    <!-- Professional Summary -->
+    <p-card class="resume-section">
+      <h2>Professional Summary</h2>
+      <p>
+        Full-Stack Developer with 6 years of experience building scalable web
+        applications. Specialized in Angular, React, Node.js, and NestJS with a
+        strong focus on performance optimization, clean code, and user experience.
+        Proven track record of delivering high-quality solutions that serve
+        10,000+ active users.
+      </p>
+    </p-card>
+
+    <!-- Skills -->
+    <p-card class="resume-section">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        @for (skill of skills; track skill) {
+        <p-chip [label]="skill" styleClass="skill-chip"></p-chip>
+        }
+      </div>
+    </p-card>
+
+    <!-- Experience -->
+    <p-card class="resume-section">
+      <h2>Professional Experience</h2>
+
+      <div class="experience-item">
+        <div class="exp-header">
+          <div>
+            <h3>Senior Full-Stack Developer</h3>
+            <p class="company">TechCorp Solutions</p>
+          </div>
+          <span class="period">Jan 2024 - Present</span>
+        </div>
+        <ul>
+          <li>
+            Led development of microservices architecture serving 100K+ users
+          </li>
+          <li>Reduced API response times by 60% through optimization</li>
+          <li>Mentored team of 4 junior developers</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="exp-header">
+          <div>
+            <h3>Frontend Lead Developer</h3>
+            <p class="company">InnovateSoft Inc</p>
+          </div>
+          <span class="period">Mar 2022 - Dec 2023</span>
+        </div>
+        <ul>
+          <li>Built Angular component library used by 15+ teams</li>
+          <li>Improved performance by 70%, reducing load time from 8s to 2.4s</li>
+          <li>Led migration from AngularJS to Angular 14</li>
+        </ul>
+      </div>
+    </p-card>
+
+    <!-- Education -->
+    <p-card class="resume-section">
+      <h2>Education & Certifications</h2>
+      <div class="education-item">
+        <h3>Bachelor of Science in Computer Science</h3>
+        <p>University Name, 2015-2018</p>
+      </div>
+    </p-card>
+  </div>
+</div>

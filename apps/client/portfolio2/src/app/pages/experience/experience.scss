@@ -1,0 +1,252 @@
+.experience-page {
+  width: 100%;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 4rem;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    color: var(--surface-900);
+
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .lead {
+    font-size: 1.25rem;
+    color: var(--text-color-secondary);
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+.section {
+  margin: 4rem 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: var(--surface-900);
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+// Work History
+.work-history-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+:host ::ng-deep {
+  .work-card {
+    position: relative;
+    overflow: visible;
+
+    &.current-job {
+      border-left: 4px solid var(--primary-color);
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+        opacity: 0.1;
+        border-radius: 6px;
+        z-index: -1;
+      }
+    }
+
+    .p-card-body {
+      padding: 2rem;
+
+      @media (max-width: 768px) {
+        padding: 1.5rem;
+      }
+    }
+
+    .work-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+
+      .work-main-info {
+        flex: 1;
+
+        .company-role {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          margin-bottom: 0.5rem;
+          flex-wrap: wrap;
+        }
+
+        h2 {
+          font-size: 1.75rem;
+          font-weight: 700;
+          margin: 0;
+          color: var(--surface-900);
+
+          @media (max-width: 768px) {
+            font-size: 1.5rem;
+          }
+        }
+
+        h3 {
+          font-size: 1.25rem;
+          font-weight: 600;
+          margin: 0 0 1rem 0;
+          color: var(--primary-color);
+
+          @media (max-width: 768px) {
+            font-size: 1.125rem;
+          }
+        }
+
+        .work-meta {
+          display: flex;
+          gap: 2rem;
+          color: var(--text-color-secondary);
+          font-size: 0.875rem;
+          flex-wrap: wrap;
+
+          span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            i {
+              color: var(--primary-color);
+            }
+          }
+        }
+      }
+    }
+
+    .technologies {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--surface-border);
+
+      strong {
+        display: block;
+        margin-bottom: 0.75rem;
+        color: var(--surface-900);
+      }
+
+      .tech-chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+        .tech-chip {
+          background: var(--surface-100);
+        }
+      }
+    }
+
+    .accomplishments {
+      strong {
+        display: block;
+        margin-bottom: 1rem;
+        color: var(--surface-900);
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 1.5rem;
+
+        li {
+          color: var(--text-color-secondary);
+          line-height: 1.8;
+          margin-bottom: 0.75rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &::marker {
+            color: var(--primary-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Key Impact
+.impact-section {
+  background: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 100%);
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  margin: 6rem -2rem;
+
+  @media (max-width: 768px) {
+    margin: 4rem -1rem;
+    padding: 2rem 1rem;
+  }
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.impact-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .impact-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: var(--impact-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem auto;
+
+    i {
+      font-size: 2rem;
+      color: white;
+    }
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 0.75rem 0;
+    color: var(--surface-900);
+  }
+
+  p {
+    color: var(--text-color-secondary);
+    line-height: 1.6;
+    margin: 0;
+    font-size: 0.875rem;
+  }
+}

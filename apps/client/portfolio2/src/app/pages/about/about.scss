@@ -1,0 +1,257 @@
+.about-page {
+  width: 100%;
+}
+
+.about-hero {
+  margin-bottom: 4rem;
+}
+
+.about-intro {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 3rem;
+  align-items: start;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .portrait-placeholder {
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: 300px;
+    }
+
+    .portrait-icon {
+      font-size: 8rem;
+      color: var(--primary-color);
+      opacity: 0.3;
+    }
+  }
+
+  .intro-content {
+    h1 {
+      font-size: 3rem;
+      margin: 0 0 1.5rem 0;
+      color: var(--surface-900);
+
+      @media (max-width: 768px) {
+        font-size: 2.5rem;
+      }
+    }
+
+    .lead {
+      font-size: 1.25rem;
+      color: var(--text-color);
+      margin-bottom: 1rem;
+      line-height: 1.6;
+
+      strong {
+        color: var(--primary-color);
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      color: var(--text-color-secondary);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.section {
+  margin: 6rem 0;
+
+  @media (max-width: 768px) {
+    margin: 4rem 0;
+  }
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: var(--surface-900);
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+// Timeline
+.timeline-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+:host ::ng-deep {
+  .p-timeline {
+    .p-timeline-event-opposite {
+      flex: 0;
+    }
+
+    .timeline-card-content {
+      .timeline-icon {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+
+        i {
+          font-size: 1.5rem;
+          color: white;
+        }
+      }
+
+      .timeline-year {
+        display: inline-block;
+        padding: 0.25rem 0.75rem;
+        background: var(--surface-100);
+        border-radius: 1rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: var(--text-color);
+        margin-bottom: 0.5rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        margin: 0.5rem 0 1rem 0;
+        color: var(--surface-900);
+      }
+
+      p {
+        color: var(--text-color-secondary);
+        line-height: 1.6;
+      }
+    }
+  }
+}
+
+// Values
+.values-section {
+  background: var(--surface-card);
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  margin: 6rem -2rem;
+
+  @media (max-width: 768px) {
+    margin: 4rem -1rem;
+    padding: 2rem 1rem;
+  }
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+:host ::ng-deep {
+  .value-card .p-card-body {
+    text-align: center;
+    padding: 2rem;
+
+    .value-icon {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem auto;
+
+      i {
+        font-size: 2rem;
+        color: white;
+      }
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      margin: 0 0 1rem 0;
+      color: var(--surface-900);
+    }
+
+    p {
+      color: var(--text-color-secondary);
+      line-height: 1.6;
+    }
+  }
+}
+
+// Thinking Section
+.thinking-section {
+  .section-title {
+    margin-bottom: 3rem;
+  }
+}
+
+.thinking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+:host ::ng-deep {
+  .thinking-card {
+    height: 100%;
+
+    .p-card-body {
+      padding: 2rem;
+      height: 100%;
+
+      .thinking-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+        .thinking-icon {
+          width: 3rem;
+          height: 3rem;
+          border-radius: 8px;
+          background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+
+          i {
+            font-size: 1.5rem;
+            color: white;
+          }
+        }
+
+        h3 {
+          font-size: 1.25rem;
+          margin: 0;
+          color: var(--surface-900);
+        }
+      }
+
+      p {
+        color: var(--text-color-secondary);
+        line-height: 1.6;
+        margin: 0;
+      }
+    }
+  }
+}

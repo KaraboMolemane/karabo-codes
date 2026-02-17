@@ -1,0 +1,247 @@
+.projects-page {
+  width: 100%;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    color: var(--surface-900);
+
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .lead {
+    font-size: 1.25rem;
+    color: var(--text-color-secondary);
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+// Filters
+.filters-section {
+  margin-bottom: 3rem;
+
+  .filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    h3 {
+      margin: 0;
+      color: var(--surface-900);
+      font-size: 1.25rem;
+    }
+
+    .project-count {
+      color: var(--text-color-secondary);
+      font-size: 0.875rem;
+    }
+  }
+}
+
+// Projects Grid
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+:host ::ng-deep {
+  .project-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .p-card-body {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      .project-image {
+        height: 200px;
+        background: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px 6px 0 0;
+        position: relative;
+
+        .project-placeholder-icon {
+          font-size: 4rem;
+          color: var(--primary-color);
+          opacity: 0.3;
+        }
+
+        .featured-badge {
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+          background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+          color: white;
+          padding: 0.5rem 1rem;
+          border-radius: 2rem;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          font-size: 0.875rem;
+          font-weight: 600;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+          i {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .project-content {
+        padding: 1.5rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .project-header {
+          h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 0 0 0.5rem 0;
+            color: var(--surface-900);
+          }
+
+          .project-role {
+            color: var(--primary-color);
+            font-size: 0.875rem;
+            font-weight: 600;
+          }
+        }
+
+        .project-description {
+          color: var(--text-color-secondary);
+          line-height: 1.6;
+          flex: 1;
+          margin: 0;
+        }
+
+        .project-tags,
+        .project-tech {
+          strong {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--surface-900);
+            font-size: 0.875rem;
+          }
+
+          .tags-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+
+            .difficulty-tag {
+              padding: 0.25rem 0.75rem;
+              border-radius: 1rem;
+              font-size: 0.75rem;
+              font-weight: 600;
+              background: var(--surface-100);
+              color: var(--text-color);
+
+              &[data-tag='Frontend'] {
+                background: #dbeafe;
+                color: #1e40af;
+              }
+
+              &[data-tag='Backend'] {
+                background: #dcfce7;
+                color: #166534;
+              }
+
+              &[data-tag='Fullstack'] {
+                background: #f3e8ff;
+                color: #6b21a8;
+              }
+
+              &[data-tag='Performance'] {
+                background: #fef3c7;
+                color: #92400e;
+              }
+
+              &[data-tag='Cloud'] {
+                background: #cffafe;
+                color: #155e75;
+              }
+
+              &[data-tag='Architecture'] {
+                background: #ffe4e6;
+                color: #9f1239;
+              }
+
+              &[data-tag='UI/UX'] {
+                background: #fce7f3;
+                color: #831843;
+              }
+
+              &[data-tag='Electron'] {
+                background: #e0e7ff;
+                color: #3730a3;
+              }
+            }
+          }
+
+          .tech-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+
+            .tech-chip {
+              background: var(--surface-100);
+              font-size: 0.75rem;
+            }
+          }
+        }
+
+        .project-actions {
+          margin-top: auto;
+          padding-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+// No projects
+.no-projects {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--text-color-secondary);
+
+  i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    opacity: 0.3;
+  }
+
+  p {
+    font-size: 1.125rem;
+    margin: 0;
+  }
+}

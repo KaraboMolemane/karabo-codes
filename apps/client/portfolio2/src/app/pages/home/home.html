@@ -1,0 +1,186 @@
+<div class="home-page">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="pi pi-code"></i>
+        <span>Full-Stack Developer</span>
+      </div>
+      <h1 class="hero-title">
+        Full-Stack Developer<br />
+        <span class="gradient-text">Angular, Node, NestJS</span><br />
+        <span class="hero-subtitle"
+          >6 Years Building Real Products</span>
+      </h1>
+      <p class="hero-description">
+        Frontend for 4 years, backend for 2 years — I build fast, reliable,
+        user-first applications that solve real business problems.
+      </p>
+      <div class="hero-actions">
+        <button
+          pButton
+          label="View Projects"
+          icon="pi pi-briefcase"
+          class="p-button-lg"
+          routerLink="/projects"
+        ></button>
+        <button
+          pButton
+          label="Download Resume"
+          icon="pi pi-download"
+          class="p-button-lg p-button-outlined"
+          (click)="downloadResume()"
+        ></button>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-animation">
+        <i class="pi pi-code hero-icon"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Highlights -->
+  <section class="section">
+    <h2 class="section-title">Technical Expertise</h2>
+    <div class="tech-highlights-grid">
+      @for (tech of techHighlights; track tech.title) {
+      <p-card class="tech-card">
+        <div class="tech-icon">
+          <i [class]="tech.icon"></i>
+        </div>
+        <h3>{{ tech.title }}</h3>
+        <p>{{ tech.description }}</p>
+        <div class="tech-tags">
+          @for (tag of tech.technologies; track tag) {
+          <p-chip [label]="tag" styleClass="tech-chip"></p-chip>
+          }
+        </div>
+      </p-card>
+      }
+    </div>
+  </section>
+
+  <!-- Key Achievements -->
+  <section class="section achievements-section">
+    <h2 class="section-title">Key Achievements</h2>
+    <p-carousel
+      [value]="achievements"
+      [numVisible]="2"
+      [numScroll]="1"
+      [circular]="true"
+      [autoplayInterval]="5000"
+      [responsiveOptions]="responsiveOptions"
+    >
+      <ng-template let-achievement pTemplate="item">
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i [class]="achievement.icon"></i>
+          </div>
+          <h4>{{ achievement.title }}</h4>
+          <p>{{ achievement.description }}</p>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </section>
+
+  <!-- Featured Projects -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Featured Projects</h2>
+      <button
+        pButton
+        label="View All Projects"
+        icon="pi pi-arrow-right"
+        iconPos="right"
+        class="p-button-text"
+        routerLink="/projects"
+      ></button>
+    </div>
+    <div class="projects-grid">
+      @for (project of featuredProjects; track project.slug) {
+      <p-card class="project-card">
+        <div class="project-image">
+          <i class="pi pi-image project-placeholder-icon"></i>
+        </div>
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.description }}</p>
+        <div class="project-tech">
+          @for (tech of project.technologies; track tech) {
+          <span class="tech-tag">{{ tech }}</span>
+          }
+        </div>
+        <div class="project-actions">
+          <button
+            pButton
+            label="View Details"
+            icon="pi pi-arrow-right"
+            class="p-button-sm p-button-text"
+            [routerLink]="['/projects', project.slug]"
+          ></button>
+        </div>
+      </p-card>
+      }
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section testimonials-section">
+    <h2 class="section-title">What People Say</h2>
+    <div class="testimonials-grid">
+      @for (testimonial of testimonials; track testimonial.name) {
+      <p-card class="testimonial-card">
+        <div class="testimonial-content">
+          <i class="pi pi-quote-left quote-icon"></i>
+          <p class="testimonial-text">{{ testimonial.text }}</p>
+          <div class="testimonial-author">
+            <div class="author-info">
+              <strong>{{ testimonial.name }}</strong>
+              <span
+                >{{ testimonial.role }} at {{ testimonial.company }}</span
+              >
+            </div>
+          </div>
+        </div>
+      </p-card>
+      }
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="section cta-section">
+    <p-card class="cta-card">
+      <div class="cta-content">
+        <h2>Let's Build Something Amazing</h2>
+        <p>
+          Have a project in mind? I'm always open to discussing new
+          opportunities and collaborations.
+        </p>
+        <div class="cta-actions">
+          <button
+            pButton
+            label="Get In Touch"
+            icon="pi pi-envelope"
+            class="p-button-lg"
+            routerLink="/contact"
+          ></button>
+          <div class="quick-links">
+            <a href="mailto:karabo@example.com" class="quick-link">
+              <i class="pi pi-envelope"></i>
+              <span>Email</span>
+            </a>
+            <a href="https://linkedin.com/in/karabomolemane" class="quick-link">
+              <i class="pi pi-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://wa.me/yourphonenumber" class="quick-link">
+              <i class="pi pi-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </p-card>
+  </section>
+</div>
+
