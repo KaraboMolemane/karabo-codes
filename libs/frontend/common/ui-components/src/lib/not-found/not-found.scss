@@ -1,0 +1,129 @@
+:host {
+  display: block;
+}
+
+.not-found {
+  --surface: #14182b;
+  --text: #e6e9ff;
+  --muted: #b7bef5;
+  --accent: #7a8cff;
+  --accent-2: #a06ff0;
+
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1rem 1.75rem;
+  color: var(--text);
+  background: linear-gradient(
+    135deg,
+    rgba(122, 140, 255, 0.12),
+    rgba(160, 111, 240, 0.12)
+  );
+  border: 1px solid rgba(122, 140, 255, 0.2);
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.22);
+  position: relative;
+}
+
+.art {
+  color: var(--text);
+  opacity: 0.85;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 0.15rem;
+}
+
+.art svg {
+  display: block;
+}
+
+.art-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 220px;
+  height: auto;
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.25));
+}
+
+.content {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.code {
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.content h1 {
+  margin: 0.5rem 0;
+  font-size: 2rem;
+}
+
+.message {
+  color: var(--muted);
+  margin: 0.25rem 0 1rem 0;
+}
+
+.lead-title {
+  text-align: center;
+  margin: 0 0 0.25rem 0;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--text);
+  position: relative;
+  z-index: 2;
+}
+
+.lead-message {
+  color: var(--muted);
+  text-align: center;
+  max-width: 720px;
+  margin: 0.25rem auto 0.5rem auto;
+  font-size: 1.05rem;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.75rem 1.1rem;
+  border-radius: 12px;
+  color: #0f1220;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 0;
+  box-shadow: 0 8px 20px rgba(122, 140, 255, 0.35);
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(122, 140, 255, 0.5);
+}
+
+.tips {
+  margin-top: 1.25rem;
+}
+
+.tips p {
+  margin: 0 0 0.5rem 0;
+  color: var(--muted);
+}
+
+.tips ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.tips a {
+  color: var(--accent);
+}

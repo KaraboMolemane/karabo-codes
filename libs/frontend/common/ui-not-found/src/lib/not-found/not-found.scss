@@ -1,0 +1,66 @@
+.nf {
+  --text: var(--text, #e6e6e6);
+  --muted: var(--muted, #9aa0a6);
+  --accent: var(--accent, #00bcd4);
+  --accent-2: var(--accent-2, #9c27b0);
+
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(145deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.2));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+}
+
+.nf__title {
+  color: var(--text);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+
+.nf__message {
+  color: var(--muted);
+  margin: 0.25rem 0 0.25rem;
+}
+
+.nf__icon svg,
+.nf__icon img {
+  display: block;
+  width: 220px;
+  height: 160px;
+}
+
+.nf__code {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: -0.25rem;
+}
+
+.nf__actions {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.nf__cta {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  background: linear-gradient(145deg, var(--accent), var(--accent-2));
+  color: #0b0b0b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nf__links {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.nf__links a {
+  color: var(--muted);
+  text-decoration: none;
+}
