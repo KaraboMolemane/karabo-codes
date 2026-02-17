@@ -8,7 +8,7 @@ import { RippleModule } from 'primeng/ripple';
 import { MenuItem } from 'primeng/api';
 
 @Component({
-  selector: 'portfolio2-layout',
+  selector: 'portfolio-layout',
   imports: [
     CommonModule,
     RouterModule,

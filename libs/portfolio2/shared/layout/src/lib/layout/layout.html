@@ -47,8 +47,12 @@
   </div>
 
   <!-- Mobile Menu Overlay -->
-  <div class="mobile-menu-overlay" [class.visible]="mobileMenuVisible()" (click)="closeMobileMenu()"></div>
-  
+  <div
+    class="mobile-menu-overlay"
+    [class.visible]="mobileMenuVisible()"
+    (click)="closeMobileMenu()"
+  ></div>
+
   <!-- Mobile Menu -->
   <div class="mobile-menu" [class.visible]="mobileMenuVisible()">
     <div class="mobile-menu-header">
@@ -117,4 +121,3 @@
     </div>
   </div>
 </div>
-

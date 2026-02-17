@@ -15,19 +15,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@karabo-codes/nav-bar": [
-        "libs/frontend/common/ui-components/src/index.ts"
-      ],
-      "@karabo-codes/ui-not-found": [
-        "libs/frontend/common/ui-not-found/src/index.ts"
-      ],
-      "@portfolio2/shared/layout": [
+      "@portfolio/shared/layout": [
         "libs/portfolio2/shared/layout/src/index.ts"
       ],
-      "@portfolio2/shared/ui-components": [
+      "@portfolio/shared/ui-components": [
         "libs/portfolio2/shared/ui-components/src/index.ts"
       ],
-      "@portfolio2/shared/not-found": [
+      "@portfolio/shared/not-found": [
         "libs/portfolio2/shared/not-found/src/index.ts"
       ]
     }

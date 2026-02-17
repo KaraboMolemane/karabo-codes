@@ -6,9 +6,9 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+    "isolatedModules": true,
     "target": "es2022",
     "moduleResolution": "bundler",
-    "isolatedModules": true,
     "emitDecoratorMetadata": false,
     "module": "preserve"
   },

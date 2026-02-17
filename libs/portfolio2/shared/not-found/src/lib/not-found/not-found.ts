@@ -3,7 +3,7 @@ import { RouterModule } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 
 @Component({
-  selector: 'portfolio2-not-found',
+  selector: 'portfolio-not-found',
   imports: [RouterModule, ButtonModule],
   templateUrl: './not-found.html',
   styleUrl: './not-found.scss',

@@ -1,0 +1,187 @@
+<div class="skills-page">
+  <!-- Header -->
+  <section class="page-header">
+    <h1>Skills & Expertise</h1>
+    <p class="lead">
+      A comprehensive view of my technical skills, experience levels, and real
+      project applications
+    </p>
+  </section>
+
+  <!-- Interactive Skill Bubbles -->
+  <section class="section">
+    <h2 class="section-title">Interactive Skills Map</h2>
+    <p class="section-subtitle">
+      Bubble size represents proficiency level. Hover for details.
+    </p>
+    <div class="skills-map">
+      @for (skill of skills; track skill.name) {
+      <div
+        class="skill-bubble"
+        [style.width.px]="skill.size"
+        [style.height.px]="skill.size"
+        [style.background-color]="skill.color"
+        [pTooltip]="
+          skill.name +
+          ' • ' +
+          skill.yearsUsed +
+          ' years • ' +
+          skill.projects +
+          ' projects'
+        "
+        tooltipPosition="top"
+      >
+        <span class="skill-name">{{ skill.name }}</span>
+      </div>
+      }
+    </div>
+  </section>
+
+  <!-- Detailed Skills Tables -->
+  <section class="section skills-tables-section">
+    <h2 class="section-title">Detailed Skills Breakdown</h2>
+
+    <!-- Frontend Skills -->
+    <p-card class="skill-table-card">
+      <h3>Frontend Development</h3>
+      <p-table [value]="frontendSkills" [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Technology</th>
+            <th>Proficiency</th>
+            <th>Years Experience</th>
+            <th>Projects & Applications</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-item>
+          <tr>
+            <td><strong>{{ item.skill }}</strong></td>
+            <td>
+              <p-tag
+                [value]="item.proficiency"
+                [severity]="getProficiencyColor(item.proficiency)"
+              ></p-tag>
+            </td>
+            <td>{{ item.yearsExperience }} years</td>
+            <td>{{ item.projects }}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </p-card>
+
+    <!-- Backend Skills -->
+    <p-card class="skill-table-card">
+      <h3>Backend Development</h3>
+      <p-table [value]="backendSkills" [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Technology</th>
+            <th>Proficiency</th>
+            <th>Years Experience</th>
+            <th>Projects & Applications</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-item>
+          <tr>
+            <td><strong>{{ item.skill }}</strong></td>
+            <td>
+              <p-tag
+                [value]="item.proficiency"
+                [severity]="getProficiencyColor(item.proficiency)"
+              ></p-tag>
+            </td>
+            <td>{{ item.yearsExperience }} years</td>
+            <td>{{ item.projects }}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </p-card>
+
+    <!-- Database Skills -->
+    <p-card class="skill-table-card">
+      <h3>Databases</h3>
+      <p-table [value]="databaseSkills" [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Technology</th>
+            <th>Proficiency</th>
+            <th>Years Experience</th>
+            <th>Projects & Applications</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-item>
+          <tr>
+            <td><strong>{{ item.skill }}</strong></td>
+            <td>
+              <p-tag
+                [value]="item.proficiency"
+                [severity]="getProficiencyColor(item.proficiency)"
+              ></p-tag>
+            </td>
+            <td>{{ item.yearsExperience }} years</td>
+            <td>{{ item.projects }}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </p-card>
+
+    <!-- Cloud & DevOps -->
+    <p-card class="skill-table-card">
+      <h3>Cloud & DevOps</h3>
+      <p-table
+        [value]="cloudDevOpsSkills"
+        [tableStyle]="{ 'min-width': '50rem' }"
+      >
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Technology</th>
+            <th>Proficiency</th>
+            <th>Years Experience</th>
+            <th>Projects & Applications</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-item>
+          <tr>
+            <td><strong>{{ item.skill }}</strong></td>
+            <td>
+              <p-tag
+                [value]="item.proficiency"
+                [severity]="getProficiencyColor(item.proficiency)"
+              ></p-tag>
+            </td>
+            <td>{{ item.yearsExperience }} years</td>
+            <td>{{ item.projects }}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </p-card>
+
+    <!-- Testing -->
+    <p-card class="skill-table-card">
+      <h3>Testing & Quality Assurance</h3>
+      <p-table [value]="testingSkills" [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Technology</th>
+            <th>Proficiency</th>
+            <th>Years Experience</th>
+            <th>Projects & Applications</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-item>
+          <tr>
+            <td><strong>{{ item.skill }}</strong></td>
+            <td>
+              <p-tag
+                [value]="item.proficiency"
+                [severity]="getProficiencyColor(item.proficiency)"
+              ></p-tag>
+            </td>
+            <td>{{ item.yearsExperience }} years</td>
+            <td>{{ item.projects }}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </p-card>
+  </section>
+</div>

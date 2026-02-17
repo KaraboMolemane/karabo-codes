@@ -18,7 +18,9 @@
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.02), 0 0 2px rgba(0, 0, 0, 0.05),
+  box-shadow:
+    0 3px 5px rgba(0, 0, 0, 0.02),
+    0 0 2px rgba(0, 0, 0, 0.05),
     0 1px 4px rgba(0, 0, 0, 0.08);
   border-bottom: 1px solid var(--surface-border);
 }
@@ -73,7 +75,9 @@
   padding: 0.75rem 1rem;
   color: var(--text-color);
   border-radius: var(--border-radius);
-  transition: background-color 0.2s, color 0.2s;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
   cursor: pointer;
   user-select: none;
   text-decoration: none;
@@ -277,7 +281,9 @@
   z-index: 998;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s, visibility 0.3s;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
 
   &.visible {
     opacity: 1;
@@ -335,7 +341,9 @@
   padding: 1rem 1.5rem;
   color: var(--text-color);
   text-decoration: none;
-  transition: background-color 0.2s, color 0.2s;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
   border-left: 3px solid transparent;
 
   i {
