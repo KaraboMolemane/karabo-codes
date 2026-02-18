@@ -33,7 +33,7 @@ export default [
       '@angular-eslint/template/elements-content': [
         'error',
         {
-          allowList: ['button[pButton]'],
+          allowList: ['label'],
         },
       ],
     },
