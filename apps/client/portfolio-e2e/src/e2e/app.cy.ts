@@ -11,7 +11,7 @@ describe('portfolio-e2e', () => {
   it('should navigate to projects page', () => {
     // Click the "View Projects" button
     cy.contains('button', 'View Projects').click();
-    
+
     // Verify we're on the projects page
     cy.url().should('include', '/projects');
     cy.contains('h1', 'Projects').should('be.visible');
@@ -20,7 +20,7 @@ describe('portfolio-e2e', () => {
   it('should navigate using the menu', () => {
     // Click on the About link in the navigation
     cy.contains('a', 'About').click();
-    
+
     // Verify we're on the about page
     cy.url().should('include', '/about');
   });
