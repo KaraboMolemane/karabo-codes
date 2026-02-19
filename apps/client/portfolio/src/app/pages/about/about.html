@@ -1,0 +1,85 @@
+<div class="about-page">
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="about-intro">
+      <div class="portrait-placeholder">
+        <i class="pi pi-user portrait-icon"></i>
+      </div>
+      <div class="intro-content">
+        <h1>About Me</h1>
+        <p class="lead">
+          Hi, I'm <strong>Karabo Molemane</strong>, a passionate full-stack
+          developer with 6 years of experience building real-world applications
+          that make a difference.
+        </p>
+        <p>
+          My journey started with curiosity about how websites work and evolved
+          into a deep commitment to crafting exceptional user experiences and
+          robust backend systems. I thrive on solving complex problems and
+          turning ideas into elegant, scalable solutions.
+        </p>
+        <p>
+          When I'm not coding, you'll find me exploring new technologies,
+          contributing to open source, or mentoring aspiring developers. I
+          believe in continuous learning and sharing knowledge with the
+          community.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="section">
+    <h2 class="section-title">My Journey</h2>
+    <div class="timeline-container">
+      <p-timeline [value]="timeline" align="alternate">
+        <ng-template pTemplate="content" let-event>
+          <p-card>
+            <div class="timeline-card-content">
+              <div class="timeline-icon" [style.background-color]="event.color">
+                <i [class]="event.icon"></i>
+              </div>
+              <span class="timeline-year">{{ event.year }}</span>
+              <h3>{{ event.title }}</h3>
+              <p>{{ event.description }}</p>
+            </div>
+          </p-card>
+        </ng-template>
+      </p-timeline>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="section values-section">
+    <h2 class="section-title">Values & Work Philosophy</h2>
+    <div class="values-grid">
+      @for (value of values; track value.title) {
+      <p-card class="value-card">
+        <div class="value-icon">
+          <i [class]="value.icon"></i>
+        </div>
+        <h3>{{ value.title }}</h3>
+        <p>{{ value.description }}</p>
+      </p-card>
+      }
+    </div>
+  </section>
+
+  <!-- How I Think Section -->
+  <section class="section thinking-section">
+    <h2 class="section-title">How I Think</h2>
+    <div class="thinking-grid">
+      @for (card of thinkingCards; track card.title) {
+      <p-card class="thinking-card">
+        <div class="thinking-header">
+          <div class="thinking-icon">
+            <i [class]="card.icon"></i>
+          </div>
+          <h3>{{ card.title }}</h3>
+        </div>
+        <p>{{ card.description }}</p>
+      </p-card>
+      }
+    </div>
+  </section>
+</div>

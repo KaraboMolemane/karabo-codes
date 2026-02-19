@@ -1,6 +1,7 @@
 {
   "extends": "../../../tsconfig.base.json",
   "compilerOptions": {
+    "moduleResolution": "node10",
     "allowJs": true,
     "outDir": "../../../dist/out-tsc",
     "module": "commonjs",

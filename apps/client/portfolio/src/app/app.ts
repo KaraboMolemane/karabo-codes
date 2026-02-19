@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NavBar } from '@karabo-codes/nav-bar';
-import { Footer } from '@karabo-codes/nav-bar';
+import { Layout } from '@shared/layout';
 
 @Component({
-  imports: [RouterModule, NavBar, Footer],
   selector: 'app-root',
+  imports: [Layout, RouterModule],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
 export class App {
-  protected title = 'client-portfolio';
+  protected title = 'portfolio';
 }

@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start:client": "cross-env nx serve client-portfolio",
+    "start:client": "cross-env nx serve portfolio",
     "start:server": "cross-env nx serve server-portfolio-api",
-    "start": "cross-env nx run-many --target=serve --projects=client-portfolio,server-portfolio-api"
+    "start": "cross-env nx run-many --target=serve --projects=portfolio,server-portfolio-api"
   },
   "private": true,
   "dependencies": {
@@ -51,7 +51,7 @@
     "@schematics/angular": "~20.3.16",
     "@swc-node/register": "1.11.1",
     "@swc/core": "1.15.8",
-    "@swc/helpers": "~0.5.11",
+    "@swc/helpers": "~0.5.18",
     "@types/jest": "^29.5.12",
     "@types/node": "25.2.2",
     "@typescript-eslint/utils": "^8.56.0",

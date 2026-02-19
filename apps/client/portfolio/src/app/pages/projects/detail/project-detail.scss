@@ -1,0 +1,278 @@
+.project-detail-page {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-header {
+  margin-bottom: 3rem;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: var(--surface-900);
+
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .role {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+}
+
+:host ::ng-deep {
+  .tech-chip-large {
+    background: var(--primary-color);
+    color: white;
+    font-weight: 600;
+  }
+}
+
+// PSR Section
+.psr-section {
+  margin: 4rem 0;
+}
+
+.psr-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+:host ::ng-deep {
+  .psr-card {
+    height: 100%;
+
+    .p-card-body {
+      padding: 2rem;
+
+      .psr-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+        i {
+          font-size: 2rem;
+        }
+
+        h2 {
+          margin: 0;
+          font-size: 1.5rem;
+          font-weight: 700;
+        }
+      }
+
+      p {
+        line-height: 1.8;
+        color: var(--text-color-secondary);
+        margin: 0;
+      }
+    }
+
+    &.problem-card {
+      border-left: 4px solid #ef4444;
+
+      .psr-header i {
+        color: #ef4444;
+      }
+    }
+
+    &.solution-card {
+      border-left: 4px solid #3b82f6;
+
+      .psr-header i {
+        color: #3b82f6;
+      }
+    }
+
+    &.result-card {
+      border-left: 4px solid #10b981;
+
+      .psr-header i {
+        color: #10b981;
+      }
+    }
+  }
+}
+
+// Section
+.section {
+  margin: 4rem 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--surface-900);
+}
+
+// Architecture
+.architecture-diagram {
+  background: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 100%);
+  border-radius: 8px;
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  .diagram-icon {
+    font-size: 5rem;
+    color: var(--primary-color);
+    opacity: 0.3;
+    margin-bottom: 1rem;
+  }
+
+  .diagram-placeholder {
+    color: var(--text-color-secondary);
+    font-size: 1.125rem;
+  }
+}
+
+// Code Samples
+.code-sample-card {
+  margin-bottom: 2rem;
+
+  h3 {
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem 0;
+    color: var(--surface-900);
+  }
+
+  .sample-description {
+    color: var(--text-color-secondary);
+    margin-bottom: 1rem;
+  }
+
+  .code-block {
+    background: var(--surface-900);
+    border-radius: 8px;
+    overflow: hidden;
+
+    .code-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 1rem;
+      background: rgba(0, 0, 0, 0.3);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+      .language-badge {
+        color: white;
+        font-size: 0.875rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+
+    pre {
+      margin: 0;
+      padding: 1.5rem;
+      overflow-x: auto;
+
+      code {
+        color: #e5e7eb;
+        font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+        font-size: 0.875rem;
+        line-height: 1.6;
+        white-space: pre;
+      }
+    }
+  }
+}
+
+// Challenges
+.challenges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+:host ::ng-deep {
+  .challenge-card .p-card-body {
+    padding: 2rem;
+
+    h3 {
+      font-size: 1.25rem;
+      margin: 0 0 1rem 0;
+      color: var(--surface-900);
+    }
+
+    .challenge-description {
+      color: var(--text-color-secondary);
+      line-height: 1.8;
+    }
+
+    .lesson {
+      strong {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--surface-900);
+        margin-bottom: 0.5rem;
+
+        i {
+          color: #10b981;
+        }
+      }
+
+      p {
+        color: var(--text-color-secondary);
+        line-height: 1.8;
+        margin: 0;
+      }
+    }
+  }
+}
+
+// Links
+.links-section {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.links-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+// Not Found
+.not-found {
+  text-align: center;
+  padding: 4rem 2rem;
+
+  i {
+    font-size: 5rem;
+    color: var(--text-color-secondary);
+    opacity: 0.3;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    color: var(--surface-900);
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: var(--text-color-secondary);
+    margin-bottom: 2rem;
+  }
+}

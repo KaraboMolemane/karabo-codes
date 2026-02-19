@@ -15,12 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@karabo-codes/nav-bar": [
-        "libs/frontend/common/ui-components/src/index.ts"
-      ],
-      "@karabo-codes/ui-not-found": [
-        "libs/frontend/common/ui-not-found/src/index.ts"
-      ]
+      "@shared/layout": ["libs/shared/layout/src/index.ts"],
+      "@shared/ui-components": ["libs/shared/ui-components/src/index.ts"],
+      "@shared/not-found": ["libs/shared/not-found/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

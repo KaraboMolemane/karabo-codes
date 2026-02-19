@@ -3,75 +3,71 @@ import { Route } from '@angular/router';
 export const appRoutes: Route[] = [
   {
     path: '',
-    loadComponent: () => import('./home/home').then((m) => m.Home),
+    loadComponent: () => import('./pages/home/home').then((m) => m.Home),
   },
   {
     path: 'about',
-    loadComponent: () => import('./about/about').then((m) => m.About),
+    loadComponent: () => import('./pages/about/about').then((m) => m.About),
   },
   {
-    path: 'projects/components',
+    path: 'projects',
     loadComponent: () =>
-      import('./projects/components/components').then((m) => m.Components),
+      import('./pages/projects/projects').then((m) => m.Projects),
   },
   {
-    path: 'projects/blocks',
+    path: 'projects/:slug',
     loadComponent: () =>
-      import('./projects/blocks/blocks').then((m) => m.Blocks),
-  },
-  {
-    path: 'projects/ui-kit',
-    loadComponent: () =>
-      import('./projects/ui-kit/ui-kit').then((m) => m.UiKit),
-  },
-  // {
-  //     path: 'projects/templates/apollo',
-  //     loadComponent: () => import('./projects/templates/apollo/apollo').then(m => m.Apollo),
-  // },
-  // {
-  //     path: 'projects/templates/ultima',
-  //     loadComponent: () => import('./projects/templates/ultima/ultima').then(m => m.Ultima),
-  // },
-  // {
-  //     path: 'experience',
-  //     loadComponent: () => import('./experience/experience').then(m => m.Experience),
-  // },
-  {
-    path: 'skills',
-    loadComponent: () => import('./skills/skills').then((m) => m.Skills),
+      import('./pages/projects/detail/project-detail').then(
+        (m) => m.ProjectDetail,
+      ),
   },
   {
     path: 'experience',
     loadComponent: () =>
-      import('./experience/experience').then((m) => m.Experience),
+      import('./pages/experience/experience').then((m) => m.Experience),
   },
   {
-    path: 'system-design',
-    loadComponent: () =>
-      import('./system-design/system-design').then((m) => m.SystemDesign),
+    path: 'skills',
+    loadComponent: () => import('./pages/skills/skills').then((m) => m.Skills),
   },
   {
-    path: 'code-quality',
+    path: 'blog',
+    loadComponent: () => import('./pages/blog/blog').then((m) => m.Blog),
+  },
+  {
+    path: 'blog/:slug',
+    loadComponent: () => import('./pages/blog/blog').then((m) => m.Blog),
+  },
+  {
+    path: 'systems',
     loadComponent: () =>
-      import('./code-quality/code-quality').then((m) => m.CodeQuality),
+      import('./pages/systems/systems').then((m) => m.Systems),
+  },
+  {
+    path: 'systems/:slug',
+    loadComponent: () =>
+      import('./pages/systems/systems').then((m) => m.Systems),
+  },
+  {
+    path: 'code-samples',
+    loadComponent: () =>
+      import('./pages/code-samples/code-samples').then((m) => m.CodeSamples),
   },
   {
     path: 'resume',
-    loadComponent: () => import('./resume/resume').then((m) => m.Resume),
+    loadComponent: () => import('./pages/resume/resume').then((m) => m.Resume),
   },
   {
     path: 'contact',
-    loadComponent: () => import('./contact/contact').then((m) => m.Contact),
+    loadComponent: () =>
+      import('./pages/contact/contact').then((m) => m.Contact),
   },
   {
     path: 'admin',
-    loadComponent: () => import('./admin/admin').then((m) => m.Admin),
+    loadComponent: () => import('./pages/admin/admin').then((m) => m.Admin),
   },
-  // Fallback 404 route using dedicated NotFound library
   {
     path: '**',
-    loadComponent: () =>
-      import('@karabo-codes/ui-not-found').then((m) => m.NotFound),
-    data: { homeUrl: '/' },
+    loadComponent: () => import('@shared/not-found').then((m) => m.NotFound),
   },
 ];

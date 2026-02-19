@@ -1,0 +1,85 @@
+<div class="projects-page">
+  <!-- Header -->
+  <section class="page-header">
+    <h1>Projects Portfolio</h1>
+    <p class="lead">
+      A showcase of real-world applications I've built, from frontend interfaces
+      to full-stack solutions
+    </p>
+  </section>
+
+  <!-- Filters -->
+  <div class="filters-section">
+    <div class="filter-header">
+      <h3>Filter Projects</h3>
+      <span class="project-count">{{ filteredProjects.length }} projects</span>
+    </div>
+    <p-select
+      [options]="filterOptions"
+      [(ngModel)]="selectedFilter"
+      optionLabel="label"
+      optionValue="value"
+      placeholder="Select a filter"
+      [style]="{ width: '100%', 'max-width': '300px' }"
+    ></p-select>
+  </div>
+
+  <!-- Projects Grid -->
+  <div class="projects-grid">
+    @for (project of filteredProjects; track project.slug) {
+    <p-card class="project-card">
+      <div class="project-image">
+        <i class="pi pi-image project-placeholder-icon"></i>
+        @if (project.featured) {
+        <div class="featured-badge">
+          <i class="pi pi-star"></i>
+          <span>Featured</span>
+        </div>
+        }
+      </div>
+
+      <div class="project-content">
+        <div class="project-header">
+          <h3>{{ project.title }}</h3>
+          <span class="project-role">{{ project.role }}</span>
+        </div>
+
+        <p class="project-description">{{ project.description }}</p>
+
+        <div class="project-tags">
+          <strong>Category:</strong>
+          <div class="tags-list">
+            @for (tag of project.tags; track tag) {
+            <span class="difficulty-tag" [attr.data-tag]="tag">{{ tag }}</span>
+            }
+          </div>
+        </div>
+
+        <div class="project-tech">
+          <strong>Tech Stack:</strong>
+          <div class="tech-chips">
+            @for (tech of project.technologies; track tech) {
+            <p-chip [label]="tech" styleClass="tech-chip"></p-chip>
+            }
+          </div>
+        </div>
+
+        <div class="project-actions">
+          <button
+            pButton
+            label="View Details"
+            icon="pi pi-arrow-right"
+            class="p-button-sm"
+            [routerLink]="['/projects', project.slug]"
+          ></button>
+        </div>
+      </div>
+    </p-card>
+    } @empty {
+    <div class="no-projects">
+      <i class="pi pi-inbox"></i>
+      <p>No projects found matching the selected filter.</p>
+    </div>
+    }
+  </div>
+</div>
