@@ -1,9 +1,8 @@
 module.exports = {
-  displayName: 'ui-components',
-  preset: '../../../../jest.preset.js',
+  displayName: 'layout',
+  preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory:
-    '../../../../coverage/libs/portfolio2/shared/ui-components',
+  coverageDirectory: '../../../coverage/libs/shared/layout',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

@@ -1,8 +1,8 @@
 module.exports = {
-  displayName: 'layout',
-  preset: '../../../../jest.preset.js',
+  displayName: 'not-found',
+  preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../../../coverage/libs/portfolio2/shared/layout',
+  coverageDirectory: '../../../coverage/libs/shared/not-found',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

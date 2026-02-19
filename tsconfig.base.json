@@ -15,14 +15,14 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@portfolio/shared/layout": [
-        "libs/portfolio2/shared/layout/src/index.ts"
+      "@shared/layout": [
+        "libs/shared/layout/src/index.ts"
       ],
-      "@portfolio/shared/ui-components": [
-        "libs/portfolio2/shared/ui-components/src/index.ts"
+      "@shared/ui-components": [
+        "libs/shared/ui-components/src/index.ts"
       ],
-      "@portfolio/shared/not-found": [
-        "libs/portfolio2/shared/not-found/src/index.ts"
+      "@shared/not-found": [
+        "libs/shared/not-found/src/index.ts"
       ]
     }
   },
