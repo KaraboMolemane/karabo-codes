@@ -15,15 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@shared/layout": [
-        "libs/shared/layout/src/index.ts"
-      ],
-      "@shared/ui-components": [
-        "libs/shared/ui-components/src/index.ts"
-      ],
-      "@shared/not-found": [
-        "libs/shared/not-found/src/index.ts"
-      ]
+      "@shared/layout": ["libs/shared/layout/src/index.ts"],
+      "@shared/ui-components": ["libs/shared/ui-components/src/index.ts"],
+      "@shared/not-found": ["libs/shared/not-found/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -3,8 +3,8 @@ import { RouterModule } from '@angular/router';
 import { Layout } from '@shared/layout';
 
 @Component({
-  imports: [Layout, RouterModule],
   selector: 'app-root',
+  imports: [Layout, RouterModule],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })

@@ -68,7 +68,6 @@ export const appRoutes: Route[] = [
   },
   {
     path: '**',
-    loadComponent: () =>
-      import('@shared/not-found').then((m) => m.NotFound),
+    loadComponent: () => import('@shared/not-found').then((m) => m.NotFound),
   },
 ];
