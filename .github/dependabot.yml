@@ -9,3 +9,14 @@ updates:
     directory: '/'
     schedule:
       interval: 'weekly'
+    groups:
+      angular-and-primeng:
+        patterns:
+          - '@angular/*'
+          - '@angular-devkit/*'
+          - '@schematics/angular'
+          - 'angular-eslint'
+          - 'zone.js'
+          - 'primeng'
+          - 'primeicons'
+          - '@primeuix/*'
