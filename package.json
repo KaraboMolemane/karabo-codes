@@ -46,7 +46,7 @@
     "@nx/nest": "^22.5.0",
     "@nx/node": "22.5.0",
     "@nx/web": "22.5.0",
-    "@nx/webpack": "22.5.0",
+    "@nx/webpack": "22.5.3",
     "@nx/workspace": "22.5.3",
     "@schematics/angular": "20.3.17",
     "@swc-node/register": "1.11.1",
