@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { FormsModule } from '@angular/forms';
 import { CardModule } from 'primeng/card';
 import { InputText } from 'primeng/inputtext';
@@ -8,14 +8,7 @@ import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-contact',
-  imports: [
-    CommonModule,
-    FormsModule,
-    CardModule,
-    InputText,
-    Textarea,
-    ButtonModule,
-  ],
+  imports: [FormsModule, CardModule, InputText, Textarea, ButtonModule],
   templateUrl: './contact.html',
   styleUrl: './contact.scss',
 })

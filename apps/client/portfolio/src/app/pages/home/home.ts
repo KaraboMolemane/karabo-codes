@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { RouterModule } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
@@ -29,14 +29,7 @@ interface FeaturedProject {
 
 @Component({
   selector: 'app-home',
-  imports: [
-    CommonModule,
-    RouterModule,
-    ButtonModule,
-    CardModule,
-    CarouselModule,
-    ChipModule,
-  ],
+  imports: [RouterModule, ButtonModule, CardModule, CarouselModule, ChipModule],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })

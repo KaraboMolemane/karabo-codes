@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { RouterModule } from '@angular/router';
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-systems',
-  imports: [CommonModule, RouterModule, CardModule, ButtonModule],
+  imports: [RouterModule, CardModule, ButtonModule],
   template: `
     <div class="systems-page">
       <h1>System Designs</h1>

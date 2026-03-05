@@ -1,5 +1,5 @@
 import { Component, OnInit, signal, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { CardModule } from 'primeng/card';
 import { ChipModule } from 'primeng/chip';
@@ -42,14 +42,7 @@ interface ProjectLink {
 
 @Component({
   selector: 'app-project-detail',
-  imports: [
-    CommonModule,
-    RouterModule,
-    CardModule,
-    ChipModule,
-    ButtonModule,
-    DividerModule,
-  ],
+  imports: [RouterModule, CardModule, ChipModule, ButtonModule, DividerModule],
   templateUrl: './project-detail.html',
   styleUrl: './project-detail.scss',
 })

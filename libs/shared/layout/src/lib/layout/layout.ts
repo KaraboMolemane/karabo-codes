@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { RouterModule } from '@angular/router';
 import { MenubarModule } from 'primeng/menubar';
 import { ButtonModule } from 'primeng/button';
@@ -10,7 +10,6 @@ import { MenuItem } from 'primeng/api';
 @Component({
   selector: 'portfolio-layout',
   imports: [
-    CommonModule,
     RouterModule,
     MenubarModule,
     ButtonModule,

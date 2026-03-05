@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { RouterModule } from '@angular/router';
 import { CardModule } from 'primeng/card';
 import { ChipModule } from 'primeng/chip';
@@ -22,7 +22,6 @@ interface Project {
 @Component({
   selector: 'app-projects',
   imports: [
-    CommonModule,
     RouterModule,
     CardModule,
     ChipModule,

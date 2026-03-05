@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { CardModule } from 'primeng/card';
 import { Tabs } from 'primeng/tabs';
 import { TabList } from 'primeng/tabs';
@@ -9,7 +9,7 @@ import { TabPanel } from 'primeng/tabs';
 
 @Component({
   selector: 'app-code-samples',
-  imports: [CommonModule, CardModule, Tabs, TabList, Tab, TabPanels, TabPanel],
+  imports: [CardModule, Tabs, TabList, Tab, TabPanels, TabPanel],
   template: `
     <div class="code-samples-page">
       <h1>Code Quality Samples</h1>
