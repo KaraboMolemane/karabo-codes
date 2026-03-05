@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { CardModule } from 'primeng/card';
 import { TimelineModule } from 'primeng/timeline';
 import { ChipModule } from 'primeng/chip';
@@ -26,7 +26,7 @@ interface ThinkingCard {
 
 @Component({
   selector: 'app-about',
-  imports: [CommonModule, CardModule, TimelineModule, ChipModule],
+  imports: [CardModule, TimelineModule, ChipModule],
   templateUrl: './about.html',
   styleUrl: './about.scss',
 })

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { RouterModule } from '@angular/router';
 import { CardModule } from 'primeng/card';
 import { ChipModule } from 'primeng/chip';
@@ -7,7 +7,7 @@ import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-blog',
-  imports: [CommonModule, RouterModule, CardModule, ChipModule, ButtonModule],
+  imports: [RouterModule, CardModule, ChipModule, ButtonModule],
   template: `
     <div class="blog-page">
       <h1>Blog</h1>

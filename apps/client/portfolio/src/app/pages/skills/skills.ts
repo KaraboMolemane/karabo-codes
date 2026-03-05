@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { CardModule } from 'primeng/card';
 import { TableModule } from 'primeng/table';
 import { TagModule } from 'primeng/tag';
@@ -24,7 +24,7 @@ interface SkillTableItem {
 
 @Component({
   selector: 'app-skills',
-  imports: [CommonModule, CardModule, TableModule, TagModule, TooltipModule],
+  imports: [CardModule, TableModule, TagModule, TooltipModule],
   templateUrl: './skills.html',
   styleUrl: './skills.scss',
 })
