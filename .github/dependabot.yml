@@ -16,6 +16,7 @@ updates:
           - '@angular-devkit/*'
           - '@schematics/angular'
           - 'angular-eslint'
+          - 'jest-preset-angular'
           - 'zone.js'
           - 'primeng'
           - 'primeicons'
