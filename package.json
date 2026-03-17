@@ -54,7 +54,7 @@
     "@swc/core": "1.15.18",
     "@swc/helpers": "~0.5.18",
     "@types/jest": "^30.0.0",
-    "@types/node": "25.4.0",
+    "@types/node": "25.5.0",
     "@typescript-eslint/utils": "^8.57.1",
     "angular-eslint": "21.3.0",
     "cross-env": "^10.1.0",
