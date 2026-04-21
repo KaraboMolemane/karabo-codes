@@ -68,7 +68,7 @@
     "jest-preset-angular": "~16.1.1",
     "jest-util": "^30.2.0",
     "nx": "22.6.5",
-    "prettier": "^3.8.1",
+    "prettier": "^3.8.3",
     "sass": "^1.97.3",
     "ts-jest": "^29.4.6",
     "ts-node": "10.9.2",
