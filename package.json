@@ -39,7 +39,7 @@
     "@nestjs/schematics": "^11.0.0",
     "@nestjs/testing": "^11.1.19",
     "@nx/angular": "22.6.1",
-    "@nx/cypress": "22.6.5",
+    "@nx/cypress": "22.7.1",
     "@nx/eslint": "22.5.4",
     "@nx/eslint-plugin": "22.6.5",
     "@nx/jest": "22.5.4",
