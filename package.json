@@ -40,7 +40,7 @@
     "@nestjs/testing": "^11.1.19",
     "@nx/angular": "22.7.1",
     "@nx/cypress": "22.7.1",
-    "@nx/eslint": "22.5.4",
+    "@nx/eslint": "22.7.1",
     "@nx/eslint-plugin": "22.6.5",
     "@nx/jest": "22.5.4",
     "@nx/js": "22.5.4",
