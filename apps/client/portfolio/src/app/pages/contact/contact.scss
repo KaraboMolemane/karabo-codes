@@ -61,7 +61,9 @@
           width: 100%;
           border: 1.5px solid var(--surface-300);
           border-radius: 6px;
-          transition: border-color 0.2s, box-shadow 0.2s;
+          transition:
+            border-color 0.2s,
+            box-shadow 0.2s;
 
           &:hover {
             border-color: var(--primary-color);
@@ -69,7 +71,8 @@
 
           &:focus {
             border-color: var(--primary-color);
-            box-shadow: 0 0 0 3px rgba(var(--primary-color-rgb, 59, 130, 246), 0.15);
+            box-shadow: 0 0 0 3px
+              rgba(var(--primary-color-rgb, 59, 130, 246), 0.15);
             outline: none;
           }
         }
