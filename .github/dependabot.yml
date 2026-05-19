@@ -21,3 +21,7 @@ updates:
           - 'primeng'
           - 'primeicons'
           - '@primeuix/*'
+      nx:
+        patterns:
+          - 'nx'
+          - '@nx/*'
