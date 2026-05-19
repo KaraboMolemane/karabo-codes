@@ -59,7 +59,7 @@
     "angular-eslint": "21.3.1",
     "cross-env": "^10.1.0",
     "cypress": "^14.2.1",
-    "eslint": "^9.8.0",
+    "eslint": "^10.4.0",
     "eslint-config-prettier": "^10.0.0",
     "eslint-plugin-cypress": "^6.4.1",
     "jest": "^30.2.0",
