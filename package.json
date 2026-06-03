@@ -19,7 +19,7 @@
     "@angular/router": "21.2.14",
     "@nestjs/common": "^11.1.17",
     "@nestjs/core": "^11.1.19",
-    "@nestjs/platform-express": "^11.1.16",
+    "@nestjs/platform-express": "^11.1.24",
     "@primeuix/themes": "^2.0.3",
     "axios": "^1.16.0",
     "primeicons": "^7.0.0",
