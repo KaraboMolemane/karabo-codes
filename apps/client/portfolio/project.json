@@ -7,12 +7,12 @@
   "tags": [],
   "targets": {
     "build": {
-      "executor": "@angular-devkit/build-angular:browser",
+      "executor": "@angular/build:application",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/client/portfolio",
         "index": "apps/client/portfolio/src/index.html",
-        "main": "apps/client/portfolio/src/main.ts",
+        "browser": "apps/client/portfolio/src/main.ts",
         "polyfills": ["zone.js"],
         "tsConfig": "apps/client/portfolio/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
@@ -41,19 +41,16 @@
           "outputHashing": "all"
         },
         "development": {
-          "buildOptimizer": false,
           "optimization": false,
-          "vendorChunk": true,
           "extractLicenses": false,
-          "sourceMap": true,
-          "namedChunks": true
+          "sourceMap": true
         }
       },
       "defaultConfiguration": "production"
     },
     "serve": {
       "continuous": true,
-      "executor": "@angular-devkit/build-angular:dev-server",
+      "executor": "@angular/build:dev-server",
       "configurations": {
         "production": {
           "buildTarget": "portfolio:build:production"
@@ -65,7 +62,7 @@
       "defaultConfiguration": "development"
     },
     "extract-i18n": {
-      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "executor": "@angular/build:extract-i18n",
       "options": {
         "buildTarget": "portfolio:build"
       }
