@@ -9,7 +9,6 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "21.2.17",
     "@angular/common": "21.2.17",
     "@angular/compiler": "21.2.17",
     "@angular/core": "21.2.17",
@@ -83,6 +82,6 @@
     "chokidar": ">=5.0.0"
   },
   "engines": {
-    "node": ">=22.22"
+    "node": ">=22.22.3"
   }
 }
