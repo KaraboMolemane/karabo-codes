@@ -9,6 +9,12 @@ updates:
     directory: '/'
     schedule:
       interval: 'weekly'
+    ignore:
+      # Angular and Nx major versions are only upgraded via a dedicated migration.
+      - dependency-name: '@angular/*'
+        update-types: ['version-update:semver-major']
+      - dependency-name: '@nx/*'
+        update-types: ['version-update:semver-major']
     groups:
       angular-and-primeng:
         patterns:
@@ -21,7 +27,29 @@ updates:
           - 'primeng'
           - 'primeicons'
           - '@primeuix/*'
+      aws:
+        patterns:
+          - '@aws-sdk/*'
+          - '@aws-crypto/*'
+          - '@smithy/*'
+      nestjs:
+        patterns:
+          - '@nestjs/*'
+          - '@automapper/*'
       nx:
         patterns:
           - 'nx'
           - '@nx/*'
+          - 'nx-*'
+          - 'nx-cloud'
+      react:
+        patterns:
+          - 'react'
+          - 'react-*'
+          - 'react-dom'
+          - '@types/react'
+          - '@types/react-dom'
+          - '@testing-library/react'
+          - '@pmmmwh/react-refresh-webpack-plugin'
+          - '@babel/preset-react'
+          - '@svgr/webpack'
