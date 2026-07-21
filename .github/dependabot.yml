@@ -9,6 +9,12 @@ updates:
     directory: '/'
     schedule:
       interval: 'weekly'
+    ignore:
+      # Angular and Nx major versions are only upgraded via a dedicated migration.
+      - dependency-name: '@angular/*'
+        update-types: ['version-update:semver-major']
+      - dependency-name: '@nx/*'
+        update-types: ['version-update:semver-major']
     groups:
       angular-and-primeng:
         patterns:
