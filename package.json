@@ -50,7 +50,7 @@
     "@nx/webpack": "23.1.0",
     "@nx/workspace": "23.1.0",
     "@schematics/angular": "21.2.19",
-    "@swc-node/register": "1.11.1",
+    "@swc-node/register": "1.12.1",
     "@swc/core": "1.15.46",
     "@swc/helpers": "~0.5.23",
     "@types/jest": "30.0.0",
