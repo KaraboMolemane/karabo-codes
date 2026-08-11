@@ -13,7 +13,27 @@ updates:
       # Angular and Nx major versions are only upgraded via a dedicated migration.
       - dependency-name: '@angular/*'
         update-types: ['version-update:semver-major']
+      - dependency-name: '@angular-devkit/*'
+        update-types: ['version-update:semver-major']
+      - dependency-name: '@schematics/angular'
+        update-types: ['version-update:semver-major']
+      - dependency-name: 'angular-eslint'
+        update-types: ['version-update:semver-major']
       - dependency-name: '@nx/*'
+        update-types: ['version-update:semver-major']
+      - dependency-name: 'nx'
+        update-types: ['version-update:semver-major']
+      - dependency-name: 'primeng'
+        update-types: ['version-update:semver-major']
+      - dependency-name: '@primeuix/*'
+        update-types: ['version-update:semver-major']
+      - dependency-name: 'primeicons'
+        update-types: ['version-update:semver-major']
+      - dependency-name: 'jest-preset-angular'
+        update-types: ['version-update:semver-major']
+      - dependency-name: 'zone.js'
+        update-types: ['version-update:semver-major']
+      - dependency-name: 'webpack-cli'
         update-types: ['version-update:semver-major']
     groups:
       angular-and-primeng:
@@ -42,14 +62,3 @@ updates:
           - '@nx/*'
           - 'nx-*'
           - 'nx-cloud'
-      react:
-        patterns:
-          - 'react'
-          - 'react-*'
-          - 'react-dom'
-          - '@types/react'
-          - '@types/react-dom'
-          - '@testing-library/react'
-          - '@pmmmwh/react-refresh-webpack-plugin'
-          - '@babel/preset-react'
-          - '@svgr/webpack'
