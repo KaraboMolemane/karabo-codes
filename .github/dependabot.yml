@@ -10,7 +10,7 @@ updates:
     schedule:
       interval: 'weekly'
     ignore:
-       # Angular and Nx major versions are only upgraded via a dedicated migration.
+      # Angular and Nx major versions are only upgraded via a dedicated migration.
       - dependency-name: '@angular/*'
         update-types: ['version-update:semver-major']
       - dependency-name: '@angular-devkit/*'
