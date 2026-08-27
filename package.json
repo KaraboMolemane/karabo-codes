@@ -31,7 +31,7 @@
     "@angular-devkit/architect": "^0.2100.6",
     "@angular-devkit/core": "21.2.21",
     "@angular-devkit/schematics": "21.2.21",
-    "@angular/build": "^21.2.21",
+    "@angular/build": "^22.1.6",
     "@angular/cli": "^21.2.21",
     "@angular/compiler-cli": "21.2.21",
     "@angular/language-service": "21.2.21",
