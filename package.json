@@ -61,7 +61,7 @@
     "cypress": "^15.18.1",
     "eslint": "^10.9.1",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-cypress": "^7.0.0",
+    "eslint-plugin-cypress": "^7.0.1",
     "jest": "^30.4.2",
     "jest-environment-jsdom": "^30.4.1",
     "jest-environment-node": "^30.4.1",
