@@ -28,9 +28,9 @@
     "zone.js": "~0.16.2"
   },
   "devDependencies": {
-    "@angular-devkit/architect": "^0.2203.0",
-    "@angular-devkit/core": "21.2.30",
-    "@angular-devkit/schematics": "21.2.30",
+    "@angular-devkit/architect": "0.2102.31",
+    "@angular-devkit/core": "21.2.31",
+    "@angular-devkit/schematics": "21.2.31",
     "@angular/build": "^21.2.31",
     "@angular/cli": "^21.2.31",
     "@angular/compiler-cli": "21.2.26",
@@ -49,7 +49,7 @@
     "@nx/web": "23.2.1",
     "@nx/webpack": "23.2.1",
     "@nx/workspace": "23.2.1",
-    "@schematics/angular": "21.2.30",
+    "@schematics/angular": "21.2.31",
     "@swc-node/register": "1.12.1",
     "@swc/core": "1.16.13",
     "@swc/helpers": "~0.5.23",
